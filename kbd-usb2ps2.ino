@@ -351,7 +351,7 @@ void KbdRptParser::OnControlKeysChanged(uint8_t before, uint8_t after) {
     Serial.println("RightShift changed");
 
     if (afterMod.bmRightShift) {
-      this->OnKeyUp(HID_KEY_RIGHT_SHIFT);
+      this->OnKeyDown(HID_KEY_RIGHT_SHIFT);
     } else {
       this->OnKeyUp(HID_KEY_RIGHT_SHIFT);
     }
