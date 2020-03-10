@@ -117,6 +117,86 @@ void InitHidKeyMapPs2() {
   hid2ps2[0x04] = {0x1C, PS2_KEY_TYPE_NORMAL};
   hid2ps2[0x05] = {0x32, PS2_KEY_TYPE_NORMAL};
   hid2ps2[0x06] = {0x21, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x07] = {0x23, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x08] = {0x24, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x09] = {0x2B, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0A] = {0x34, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0B] = {0x33, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0C] = {0x43, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0D] = {0x3B, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0E] = {0x42, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x0F] = {0x4B, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x10] = {0x3A, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x11] = {0x31, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x12] = {0x44, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x13] = {0x4D, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x14] = {0x15, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x15] = {0x2D, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x16] = {0x1B, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x17] = {0x2C, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x18] = {0x3C, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x19] = {0x2A, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x1A] = {0x1D, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x1B] = {0x22, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x1C] = {0x35, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x1D] = {0x1A, PS2_KEY_TYPE_NORMAL};
+
+
+  // 1-0
+  hid2ps2[0x1E] = {0x16, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x1F] = {0x1E, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x20] = {0x26, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x21] = {0x25, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x22] = {0x2E, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x23] = {0x36, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x24] = {0x3D, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x25] = {0x3E, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x26] = {0x46, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x27] = {0x45, PS2_KEY_TYPE_NORMAL};
+
+  hid2ps2[0x28] = {0x5A, PS2_KEY_TYPE_NORMAL};  // Return
+  hid2ps2[0x29] = {0x76, PS2_KEY_TYPE_NORMAL};  // Escape
+  hid2ps2[0x2A] = {0x66, PS2_KEY_TYPE_NORMAL};  // Backspace
+  hid2ps2[0x2B] = {0x0D, PS2_KEY_TYPE_NORMAL};  // Tab
+  hid2ps2[0x2C] = {0x29, PS2_KEY_TYPE_NORMAL};  // Space
+  hid2ps2[0x2D] = {0x4E, PS2_KEY_TYPE_NORMAL};  // -_
+  hid2ps2[0x2E] = {0x55, PS2_KEY_TYPE_NORMAL};  // =+
+  hid2ps2[0x2F] = {0x54, PS2_KEY_TYPE_NORMAL};  // [{
+  hid2ps2[0x30] = {0x5B, PS2_KEY_TYPE_NORMAL};  // ]}
+  hid2ps2[0x31] = {0x5D, PS2_KEY_TYPE_NORMAL};  // \|
+
+  hid2ps2[0x33] = {0x4C, PS2_KEY_TYPE_NORMAL};  // ;:
+  hid2ps2[0x34] = {0x52, PS2_KEY_TYPE_NORMAL};  // '"
+  hid2ps2[0x35] = {0x0E, PS2_KEY_TYPE_NORMAL};  // `~
+  hid2ps2[0x36] = {0x41, PS2_KEY_TYPE_NORMAL};  // ,<
+  hid2ps2[0x37] = {0x49, PS2_KEY_TYPE_NORMAL};  // ,>
+  hid2ps2[0x38] = {0x4A, PS2_KEY_TYPE_NORMAL};  // /?
+  hid2ps2[0x39] = {0x58, PS2_KEY_TYPE_NORMAL};  // Caps Lock
+
+  // F1-F12
+  hid2ps2[0x3A] = {0x05, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x3B] = {0x06, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x3C] = {0x04, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x3D] = {0x0C, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x3E] = {0x03, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x3F] = {0x0B, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x40] = {0x83, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x41] = {0x0A, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x42] = {0x01, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x43] = {0x09, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x44] = {0x78, PS2_KEY_TYPE_NORMAL};
+  hid2ps2[0x45] = {0x07, PS2_KEY_TYPE_NORMAL};
+
+  hid2ps2[0x47] = {0x7E, PS2_KEY_TYPE_NORMAL};  // Scroll Lock
+
+  hid2ps2[0x53] = {0x77, PS2_KEY_TYPE_NORMAL};  // Num Lock
+
+  hid2ps2[0x55] = {0x7C, PS2_KEY_TYPE_NORMAL};  // Keypad *
+  hid2ps2[0x56] = {0x7B, PS2_KEY_TYPE_NORMAL};  // Keypad -
+  hid2ps2[0x57] = {0x79, PS2_KEY_TYPE_NORMAL};  // Keypad +
+
+  hid2ps2[0x63] = {0x71, PS2_KEY_TYPE_NORMAL};  // Keypad . Delete
+  hid2ps2[0x67] = {0x0F, PS2_KEY_TYPE_NORMAL};  // Keypad =
 
   hid2ps2[0xE0] = {0x14, PS2_KEY_TYPE_NORMAL};  // Left Control
   hid2ps2[0xE1] = {0x12, PS2_KEY_TYPE_NORMAL};  // Left Shift
@@ -124,136 +204,42 @@ void InitHidKeyMapPs2() {
 
   hid2ps2[0xE5] = {0x59, PS2_KEY_TYPE_NORMAL};  // Right Shift
 
-  hid2ps2[0x39] = {0x58, PS2_KEY_TYPE_NORMAL};  // Caps Lock
-
-  hid2ps2[0x53] = {0x77, PS2_KEY_TYPE_NORMAL};  // Num Lock
-
 
   // PS/2 scan code prefix with E0
   // | HID | PS/2 Make | PS/2 Break |
   // | --- | --------- | ---------- |
   // | 46  | E0 7C     | E0 F0 7C   |
-  hid2ps2[0x46] = {0x7c, PS2_KEY_TYPE_E0};
+  hid2ps2[0x46] = {0x7C, PS2_KEY_TYPE_E0};  // Print Screen
+
+  hid2ps2[0x49] = {0x70, PS2_KEY_TYPE_E0};  // Insert
+  hid2ps2[0x4A] = {0x6C, PS2_KEY_TYPE_E0};  // Home
+  hid2ps2[0x4B] = {0x7D, PS2_KEY_TYPE_E0};  // Page Up
+  hid2ps2[0x4C] = {0x71, PS2_KEY_TYPE_E0};  // Delete
+  hid2ps2[0x4D] = {0x69, PS2_KEY_TYPE_E0};  // End
+  hid2ps2[0x4E] = {0x7A, PS2_KEY_TYPE_E0};  // Page Down
+  hid2ps2[0x4F] = {0x74, PS2_KEY_TYPE_E0};  // Right Arrow
+  hid2ps2[0x50] = {0x6B, PS2_KEY_TYPE_E0};  // Left Arrow
+  hid2ps2[0x51] = {0x72, PS2_KEY_TYPE_E0};  // Down Arrow
+  hid2ps2[0x52] = {0x75, PS2_KEY_TYPE_E0};  // Up Arrow
+
+  hid2ps2[0x54] = {0x4A, PS2_KEY_TYPE_E0};  // Keypad /
+
+  hid2ps2[0x58] = {0x5A, PS2_KEY_TYPE_E0};  // Keypad Enter
+
+  hid2ps2[0x65] = {0x2F, PS2_KEY_TYPE_E0};  // App
 
   hid2ps2[0xE3] = {0x1F, PS2_KEY_TYPE_E0};  // Left GUI
   hid2ps2[0xE4] = {0x14, PS2_KEY_TYPE_E0};  // Right Control
+
   hid2ps2[0xE6] = {0x11, PS2_KEY_TYPE_E0};  // Right Alt
   hid2ps2[0xE7] = {0x27, PS2_KEY_TYPE_E0};  // Right GUI
-
 
 
   // PS/2 scan code prefix with E1
   // | HID | PS/2 Make               | PS/2 Break |
   // | --- | ----------------------- | ---------- |
   // | 48  | E1 14 77 E1 F0 14 F0 77 | None       |
-
   hid2ps2[0x48] = {0x0, PS2_KEY_TYPE_E1};  // Pause/Break
-
-  //  // A-Z
-  //  k[0x04] = 0x1C;
-  //  k[0x05] = 0x32;
-  //  k[0x06] = 0x21;
-  //  k[0x07] = 0x23;
-  //  k[0x08] = 0x24;
-  //  k[0x09] = 0x2B;
-  //  k[0x0A] = 0x34;
-  //  k[0x0B] = 0x33;
-  //  k[0x0C] = 0x43;
-  //  k[0x0D] = 0x3B;
-  //  k[0x0E] = 0x42;
-  //  k[0x0F] = 0x4B;
-  //  k[0x10] = 0x3A;
-  //  k[0x11] = 0x31;
-  //  k[0x12] = 0x44;
-  //  k[0x13] = 0x4D;
-  //  k[0x14] = 0x15;
-  //  k[0x15] = 0x2D;
-  //  k[0x16] = 0x1B;
-  //  k[0x17] = 0x2C;
-  //  k[0x18] = 0x3C;
-  //  k[0x19] = 0x2A;
-  //  k[0x1A] = 0x1D;
-  //  k[0x1B] = 0x22;
-  //  k[0x1C] = 0x35;
-  //  k[0x1D] = 0x1A;
-  //
-  //  // 1-0
-  //  k[0x1E] = 0x16;
-  //  k[0x1F] = 0x1E;
-  //  k[0x20] = 0x26;
-  //  k[0x21] = 0x25;
-  //  k[0x22] = 0x2E;
-  //  k[0x23] = 0x36;
-  //  k[0x24] = 0x3D;
-  //  k[0x25] = 0x3E;
-  //  k[0x26] = 0x46;
-  //  k[0x27] = 0x45;
-  //
-  //  k[0x28] = 0x5A;  // Return
-  //  k[0x29] = 0x76;  // Escape
-  //  k[0x2A] = 0x66;  // Backspace
-  //  k[0x2B] = 0x0D;  // Tab
-  //  k[0x2C] = 0x29;  // Space
-  //  k[0x2D] = 0x4E;  // -_
-  //  k[0x2E] = 0x55;  // =+
-  //  k[0x2F] = 0x54;  // [{
-  //  k[0x30] = 0x5B;  // ]}
-  //  k[0x31] = 0x5D;  // \|
-  //  k[0x32] = 0x5D;
-  //  k[0x33] = 0x4C;  // ;:
-  //  k[0x34] = 0x52;  // '"
-  //  k[0x35] = 0x0E;  // `~
-  //  k[0x36] = 0x41;  // ,<
-  //  k[0x37] = 0x49;  // .>
-  //  k[0x38] = 0x4A;  // /?
-  //  k[0x39] = 0x58;  // Caps Lock
-  //
-  //  // F1-F12
-  //  k[0x3A] = 0x05;
-  //  k[0x3B] = 0x06;
-  //  k[0x3C] = 0x04;
-  //  k[0x3D] = 0x0C;
-  //  k[0x3E] = 0x03;
-  //  k[0x3F] = 0x0B;
-  //  k[0x40] = 0x83;
-  //  k[0x41] = 0x0A;
-  //  k[0x42] = 0x01;
-  //  k[0x43] = 0x09;
-  //  k[0x44] = 0x78;
-  //  k[0x45] = 0x07;
-  //
-  //  k[0x47] = 0x7E;  // Scroll Lock
-  //
-  //  k[0x53] = 0x77;  // Num Lock
-  //
-  //  k[0xE0] = 0x14;  // Left Control
-  //  k[0xE1] = 0x12;  // Left Shift
-  //  k[0xE2] = 0x11;  // Left Alt
-  //
-  //  k[0xE5] = 0x59;  // Right Shift
-  //
-  //
-  //  k_e0[0x46] = 0x7C;  // Print Screen
-  //  k_e0[0x49] = 0x70;  // Insert
-  //  k_e0[0x4A] = 0x6C;  // Home
-  //  k_e0[0x4B] = 0x7D;  // Page Up
-  //  k_e0[0x4C] = 0x71;  // Delete
-  //  k_e0[0x4D] = 0x69;  // End
-  //  k_e0[0x4E] = 0x7A;  // Page Down
-  //  k_e0[0x4F] = 0x74;  // Right Arrow
-  //  k_e0[0x50] = 0x6B;  // Left Arrow
-  //  k_e0[0x51] = 0x72;  // Down Arrow
-  //  k_e0[0x52] = 0x75;  // Up Arrow
-  //
-  //  k_e0[0x54] = 0x4A;  // Keypad /
-  //  k_e0[0x58] = 0x5A;  // Keypad Enter
-  //
-  //  k_e0[0x65] = 0x2F;  // App
-  //
-  //  k_e0[0xE3] = 0x1F;  // Left GUI
-  //  k_e0[0xE4] = 0x14;  // Right Control
-  //  k_e0[0xE6] = 0x11;  // Right Alt
-  //  k_e0[0xE7] = 0x27;  // Right GUI
 }
 
 
@@ -375,7 +361,7 @@ void KbdRptParser::OnControlKeysChanged(uint8_t before, uint8_t after) {
 
     if (afterMod.bmRightAlt) {
       this->OnKeyDown(HID_KEY_RIGHT_ALT);
-    } else { 
+    } else {
       this->OnKeyUp(HID_KEY_RIGHT_ALT);
     }
   }
