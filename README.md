@@ -1,4 +1,4 @@
-# kBD-USB2PS2
+# KBD-USB2PS2
 
 This program makes the conversion of the USB HID keyboard protocol to the PS/2 keyboard protocol (scan code set 2).
 
