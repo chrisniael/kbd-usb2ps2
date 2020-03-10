@@ -91,7 +91,6 @@ void Ps2KeyRelease(const Ps2Key& ps2_key) {
   PrintHex<uint8_t>(ps2_key.type, 0x80);
   Serial.println("");
 
-
   if (Ps2KeyTypeNormal(ps2_key.type)) {
     fid_ps2h_write(0xF0);
     fid_ps2h_write(ps2_key.key);
@@ -141,7 +140,6 @@ void InitHidKeyMapPs2() {
   hid2ps2[0x1B] = {0x22, PS2_KEY_TYPE_NORMAL};
   hid2ps2[0x1C] = {0x35, PS2_KEY_TYPE_NORMAL};
   hid2ps2[0x1D] = {0x1A, PS2_KEY_TYPE_NORMAL};
-
 
   // 1-0
   hid2ps2[0x1E] = {0x16, PS2_KEY_TYPE_NORMAL};
@@ -205,7 +203,6 @@ void InitHidKeyMapPs2() {
 
   hid2ps2[0xE5] = {0x59, PS2_KEY_TYPE_NORMAL};  // Right Shift
 
-
   // PS/2 scan code prefix with E0
   // | HID | PS/2 Make | PS/2 Break |
   // | --- | --------- | ---------- |
@@ -235,14 +232,12 @@ void InitHidKeyMapPs2() {
   hid2ps2[0xE6] = {0x11, PS2_KEY_TYPE_E0};  // Right Alt
   hid2ps2[0xE7] = {0x27, PS2_KEY_TYPE_E0};  // Right GUI
 
-
   // PS/2 scan code prefix with E1
   // | HID | PS/2 Make               | PS/2 Break |
   // | --- | ----------------------- | ---------- |
   // | 48  | E1 14 77 E1 F0 14 F0 77 | None       |
   hid2ps2[0x48] = {0x0, PS2_KEY_TYPE_E1};  // Pause/Break
 }
-
 
 class KbdRptParser : public KeyboardReportParser {
   void PrintKey(uint8_t mod, uint8_t key);
