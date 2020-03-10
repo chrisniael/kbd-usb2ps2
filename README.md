@@ -31,3 +31,8 @@ It seems USB Host Shield V2.0 don't support USB keyboard with internal hub, so i
 
 * Num Lock key not working
 * BIOS boot checking not recognize this program as a PS/2 keyboard
+
+## Reference
+
+* [The PS/2 Mouse/Keyboard Protocol](https://www.avrfreaks.net/sites/default/files/PS2%20Keyboard.pdf), Adam Chapweske
+* [USB HID to PS/2 Scan Code Translation Table](https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/translate.pdf), Microsoft
