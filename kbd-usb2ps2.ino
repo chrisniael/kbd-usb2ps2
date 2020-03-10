@@ -10,8 +10,9 @@
 #endif
 #include <SPI.h>
 
-
-#define KEY_REPEAT_INTERVAL 360
+// typematic rate: the smaller number, the faster rate
+#define KEY_REPEAT_INTERVAL 280
+// typematic delay: the smaller number, the less delay
 #define KEY_REPEAT_DELAY 8000
 
 // PS/2 Key type
