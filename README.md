@@ -1,5 +1,7 @@
 # KBD-USB2PS2
 
+![kbd-usb2ps2](kbd-usb2ps2.png)
+
 This program makes the conversion of the USB HID keyboard protocol to the PS/2 keyboard protocol (scan code set 2).
 
 The original ideal of this program is from [usb2ps2](https://github.com/limao693/usb2ps2), but it didn't realize **typematic rate** and  **typematic delay** and the *USB Host Shield* library it used is too old. So this program fix the all problems above.
