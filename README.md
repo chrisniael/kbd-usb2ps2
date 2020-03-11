@@ -14,10 +14,12 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 ## Usage
 
 1. Install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-2. Install USB Host Shield Library 2.0 in Arduino IDE
+2. Install [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0) in Arduino IDE
 3. Brush this program (kbd-usb2ps2.ino) into Arduino Uno Rev3
-4. Put USB Host Shield V2.0 into Arduino Uno Rev3
-5. Connect PS/2 data line and clock line to Arduino (4, 2)
+4. Assemble USB Host Shield V2.0 on Arduino Uno Rev3
+5. Connect PS/2 **data line** and **clock line** to Arduino (**4**, **2**)
+
+Before using this system, you should make sure your OS has loaded PS/2 keyboard driver. You can plug one old PS/2 keyboard to your computer before computer power on, then replace the old PS/2 keyboard with this system after OS start. I know this experience is not good, I'm tring to fix it.
 
 ## Compatiable Keyboard
 
