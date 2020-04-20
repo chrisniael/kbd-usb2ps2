@@ -33,8 +33,8 @@ It seems USB Host Shield V2.0 don't support USB keyboard with internal hub, so i
 
 ## Exist Problems
 
-* Num Lock key not working
-* BIOS boot checking not recognize this program as a PS/2 keyboard
+* [ ] Num Lock key not working
+* [x] BIOS boot checking not recognize this program as a PS/2 keyboard
 
 ## Reference
 
