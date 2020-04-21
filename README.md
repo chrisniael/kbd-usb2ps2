@@ -31,7 +31,7 @@
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 
-USB Host Shield V2.0 好像[不支持自带 HUB 口的键盘](https://github.com/felis/USB_Host_Shield_2.0/issues/518)，所以如果你的键盘自带 Hub 口，那插在这个系统上是不能正常使用的。
+USB Host Shield V2.0 好像[不支持自带 Hub 口的键盘](https://github.com/felis/USB_Host_Shield_2.0/issues/518)，所以如果你的键盘自带 Hub 口，那插在这个系统上是不能正常使用的。
 
 :rose: 欢迎提交 PR 来完善这个键盘支持列表。
 
