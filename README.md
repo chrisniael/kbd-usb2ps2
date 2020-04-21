@@ -31,7 +31,7 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 
 It seems USB Host Shield V2.0 don't support USB keyboard with internal hub, so if your keyboard has internal hub, it won't work.
 
-:rose: Welcome PR to comtribute to this keyboard supporte list.
+:rose: Welcome PR to contribute to this keyboard support list.
 
 ## TODO
 
