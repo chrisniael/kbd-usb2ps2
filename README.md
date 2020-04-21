@@ -19,14 +19,14 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 4. Assemble USB Host Shield V2.0 on Arduino Uno Rev3
 5. Connect PS/2 **data line** and **clock line** to Arduino (**4**, **2**)
 
-Before using this system, you should make sure your OS has loaded PS/2 keyboard driver. You can plug one old PS/2 keyboard to your computer before computer power on, then replace the old PS/2 keyboard with this system after OS start. I know this experience is not good, I'm tring to fix it.
+:warning: Note: You should plug PS/2 interface to your computer before computer power on, because PS/2 doesn't support [hotplugging](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
 
 ## Compatiable Keyboard
 
-✔️ : Support, ❌: Not Support
+:heavy_check_mark: : Support, :x: : Not Support
 
-* HHKB Professional Type-S ❌
-* CHERRY G80-3494LWCEU-0 ✔️
+* HHKB Professional Type-S :x:
+* CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 
 It seems USB Host Shield V2.0 don't support USB keyboard with internal hub, so if your keyboard has internal hub, it won't work.
