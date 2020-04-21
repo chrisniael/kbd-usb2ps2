@@ -1,42 +1,45 @@
 # KBD-USB2PS2
 
+中文 | [English](./README-en.md)
+
 ![kbd-usb2ps2](kbd-usb2ps2.png)
 
-This program makes the conversion of the USB HID keyboard protocol to the PS/2 keyboard protocol (scan code set 2).
+转化 USB HID 键盘协议为 PS/2 键盘协议 (scan code set 2)
 
-The original ideal of this program is from [usb2ps2](https://github.com/limao693/usb2ps2), but it didn't realize **boot init**, **typematic rate** and  **typematic delay** and the *USB Host Shield* library it used is too old. So this program fix the all problems above.
+这个项目的最初想法来源于 [usb2ps2](https://github.com/limao693/usb2ps2)，但是这个项目没有实现 PS/2 键盘协议的 **启动初始化**，**输入速率** 和 **输入延迟**，还有就是使用的 *USB Host Shield* 库太旧了，这个新的项目实现了上提到的这些问题。
 
-## Hardware Requirements
+## 硬件需求
 
 * Arduino Uno Rev3
 * USB Host Shield V2.0
 
-## Usage
+## 如何使用
 
-1. Install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-2. Install [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0) in Arduino IDE
-3. Brush this program (kbd-usb2ps2.ino) into Arduino Uno Rev3
-4. Assemble USB Host Shield V2.0 on Arduino Uno Rev3
-5. Connect PS/2 **data line** and **clock line** to Arduino (**4**, **2**)
+1. 安装 [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+2. 在 Arduino IDE 中安装 [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0)
+3. 将这个项目 (kbd-usb2ps2.ino) 写入 Arduino Uno Rev3
+4. 将 USB Host Shield V2.0 组装在 Arduino Uno Rev3 上
+5. 将 PS/2 的 **数据线** 和 **时钟线** 分别插在 Arduino 的 (**4**, **2**) 上
 
 :warning: Note: You should plug PS/2 into computer before the computer is turned on, because PS/2 does not support [hotplugging](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
+:warning: 注意: 在电脑启动前，你就应该先把 PS/2 接口插在电脑上，因为 PS/2 接口不支持 [热插拔](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
 
-## Compatiable Keyboard
+## 键盘兼容性
 
-:heavy_check_mark: : Support, :x: : Not Support
+:heavy_check_mark: : 支持, :x: : 不支持 
 
 * HHKB Professional Type-S :x:
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 
-It seems USB Host Shield V2.0 don't support USB keyboard with internal hub, so if your keyboard has internal hub, it won't work.
+USB Host Shield V2.0 好像[不支持自带 HUB 口的键盘](https://github.com/felis/USB_Host_Shield_2.0/issues/518)，所以如果你的键盘自带 Hub 口，那插在这个系统上是不能正常使用的。
 
-:rose: Welcome PR to contribute to this keyboard support list.
+:rose: 欢迎提交 PR 来完善这个键盘支持列表。
 
 ## TODO
 
-* [ ] Num Lock key not working
-* [x] BIOS boot checking not recognize this program as a PS/2 keyboard
+* [ ] 支持 Num Lock
+* [x] BIOS 启动时识别为 PS/2 键盘设备
 
 ## Reference
 
