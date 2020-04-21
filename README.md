@@ -1,6 +1,6 @@
 # KBD-USB2PS2
 
-中文 | [English](./README-en.md)
+中文 | [English](README-en.md)
 
 ![kbd-usb2ps2](kbd-usb2ps2.png)
 
