@@ -21,7 +21,6 @@
 4. 将 USB Host Shield V2.0 组装在 Arduino Uno Rev3 上
 5. 将 PS/2 的 **数据线** 和 **时钟线** 分别插在 Arduino 的 (**4**, **2**) 上
 
-:warning: Note: You should plug PS/2 into computer before the computer is turned on, because PS/2 does not support [hotplugging](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
 :warning: 注意: 在电脑启动前，你就应该先把 PS/2 接口插在电脑上，因为 PS/2 接口不支持 [热插拔](https://en.wikipedia.org/wiki/PS/2_port#Hotplugging).
 
 ## 键盘兼容性

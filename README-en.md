@@ -31,7 +31,7 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 
-It seems USB Host Shield V2.0 don't [support USB keyboard with internal hub](https://github.com/felis/USB_Host_Shield_2.0/issues/518), so if your keyboard has internal hub, it won't work.
+It seems USB Host Shield V2.0 [don't support USB keyboard with internal hub](https://github.com/felis/USB_Host_Shield_2.0/issues/518), so if your keyboard has internal hub, it won't work.
 
 :rose: Welcome PR to contribute to this keyboard support list.
 
