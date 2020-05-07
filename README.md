@@ -10,8 +10,9 @@
 
 ## 硬件需求
 
-* Arduino Uno Rev3
-* USB Host Shield V2.0
+* [Arduino Uno Rev3](https://store.arduino.cc/usa/arduino-uno-rev3)
+* [USB Host Shield V2.0](https://store.arduino.cc/usa/arduino-usb-host-shield)
+* PS/2 线（可以从旧的 PS/2 键盘上拆下来）
 
 ## 如何使用
 
