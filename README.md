@@ -26,7 +26,7 @@
 
 ## 键盘兼容性
 
-:heavy_check_mark: : 支持, :x: : 不支持 
+:heavy_check_mark: : 支持, :x: : 不支持
 
 * HHKB Professional Type-S :x:
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:

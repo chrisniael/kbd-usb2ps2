@@ -406,6 +406,65 @@ HIDBoot<USB_HID_PROTOCOL_KEYBOARD> HidKeyboard(&Usb);
 
 KbdRptParser Prs;
 
+void OnPs2Read(const uint8_t& b) {
+  switch (b) {
+    case 0xFF: {
+      // 开始自检流程
+      uint8_t ack = 0xFA;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+
+      // 自检完成
+      ack = 0xAA;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+      break;
+    }
+    case 0xEE: {
+      // Echo
+      uint8_t ack = 0xEE;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+      break;
+    }
+    case 0xF2: {
+      // 读取设备 ID
+      uint8_t ack = 0xFA;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+
+      ack = 0xAB;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+
+      ack = 0x83;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+      break;
+    }
+    default: {
+      uint8_t ack = 0xFA;
+      fid_ps2h_write(ack);
+      Serial.print("Ps2 write: ");
+      PrintHex<uint8_t>(ack, 0x80);
+      Serial.println("");
+      break;
+    }
+  }
+}
+
 void setup() {
   Serial.begin(115200);
 #if !defined(__MIPSEL__)
@@ -434,53 +493,7 @@ void loop() {
     Serial.print("Ps2 read: ");
     PrintHex<uint8_t>(b, 0x80);
     Serial.println("");
-    if (b == 0xFF) {
-      // 开始自检流程
-      uint8_t ack = 0xFA;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-
-      // 自检完成
-      ack = 0xAA;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-    } else if (b == 0xEE) {
-      // Echo
-      uint8_t ack = 0xEE;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-    } else if (b == 0xF2) {
-      // 读取设备 ID
-      uint8_t ack = 0xFA;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-
-      ack = 0xAB;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-
-      ack = 0x83;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-    } else {
-      uint8_t ack = 0xFA;
-      fid_ps2h_write(ack);
-      Serial.print("Ps2 write: ");
-      PrintHex<uint8_t>(ack, 0x80);
-      Serial.println("");
-    }
+    OnPs2Read(b);
   }
 
   if (last_press_key == nullptr) {
