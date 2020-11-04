@@ -28,7 +28,8 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 
 :heavy_check_mark: : Support, :x: : Not Support
 
-* HHKB Professional Type-S :x:
+* HHKB Professional Hybrid Type-S (PD-KB800WS) :heavy_check_mark:
+* HHKB Professional Type-S (PD-KB400WS) :x:
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 

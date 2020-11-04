@@ -28,7 +28,8 @@
 
 :heavy_check_mark: : 支持, :x: : 不支持
 
-* HHKB Professional Type-S :x:
+* HHKB Professional Hybrid Type-S (PD-KB800WS) :heavy_check_mark:
+* HHKB Professional Type-S (PD-KB400WS) :x:
 * CHERRY G80-3494LWCEU-0 :heavy_check_mark:
 * ...
 
