@@ -11,7 +11,7 @@ The original ideal of this program is from [usb2ps2](https://github.com/limao693
 ## Hardware Requirements
 
 * [Arduino Uno Rev3](https://store.arduino.cc/usa/arduino-uno-rev3)
-* [USB Host Shield V2.0](https://store.arduino.cc/usa/arduino-usb-host-shield)
+* [USB Host Shield V2.0](https://www.arduino.cc/en/Main/ArduinoUSBHostShield&lang=)
 * PS/2 cable (you can get it from the old PS/2 keyboard)
 
 ## Usage
